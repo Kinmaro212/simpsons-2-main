@@ -1,0 +1,75 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* *******************************************general*********************************** */
+
+body{
+    background-color: rgb(255, 183, 0);
+}
+
+
+h2{
+    background-color:rgb(15, 109, 231) ;
+    color: white;
+    text-align: center;
+    padding: 0.4em;
+    width: 100%;
+}
+
+
+/* *******************************************header******************************** */
+header{
+
+    text-align: center;
+    width: 100%;
+    vertical-align: auto;
+}
+
+figure{
+    width: 100%;
+}
+
+/* *******************************************main nav******************************** */
+ul{
+    display: flex;
+    padding: 0.6em;
+    justify-content: center;
+    justify-content: space-around;
+    background-color:  rgb(15, 109, 231);
+    color: white;
+}
+
+
+.simpsons_on_tv{
+width: 100%;
+}
+
+/* *******************************************main*********************************** */
+
+article{
+    text-align:justify ;
+    display: block;
+}
+
+main{
+    background-color: white;
+    }
+    
+#container{
+    width: 80%;
+    }
+/* *******************************************main_aside***************************** */
+aside{
+    
+}
+
+/* *******************************************footer********************************* */
+footer{
+    color: white;
+    background-color:rgb(15, 109, 231);
+    text-align: center;
+}
