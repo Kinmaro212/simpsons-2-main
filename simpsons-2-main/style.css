@@ -5,10 +5,13 @@
     list-style: none;
 }
 
+
+
 /* *******************************************general*********************************** */
 
 body{
     background-color: rgb(255, 183, 0);
+    margin: auto;
 }
 
 
@@ -26,47 +29,112 @@ header{
 
     text-align: center;
     width: 100%;
-    vertical-align: auto;
-}
-
-figure{
-    width: 100%;
 }
 
 /* *******************************************main nav******************************** */
 ul{
+    color: white;
     display: flex;
-    padding: 0.6em;
-    justify-content: center;
+    padding: 1.5em;
     justify-content: space-around;
     background-color:  rgb(15, 109, 231);
+    border-bottom-style:dashed;
+}
+
+nav>ul>li>a{
     color: white;
 }
 
-
+figure{
+    vertical-align: top;
+}
 .simpsons_on_tv{
-width: 100%;
+    width: 100%;
+    border-bottom-style: solid white;
+    vertical-align: top;
 }
 
-.
+.simpsons_le_film{
+    display: inline flex;
+}
 
 /* *******************************************main*********************************** */
 
 article{
     text-align:justify ;
-    display: block;
+
+    width: 100%;
+    font-size: larger;
+    padding: 0.5em;
+}
+h1{
+    color: rgb(255, 196, 0);
+    font-size: larger;
+    margin-bottom: 0.7em;
+    padding-top:0.4em ;
 }
 
 main{
     background-color: white;
+
     }
     
 #container{
     width: 80%;
     }
+
+.txtsimpsons{
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.simpfilm{
+    border: solid gray;
+
+    margin: 0.2em;
+}
+.content{
+    display: flex;
+    padding-right: 0.9em;
+}
+
+
 /* *******************************************main_aside***************************** */
-aside{
-    
+.mattgroeningA{
+    height:44em;
+    width:30%;
+    text-align: justify;
+    background-color: rgb(15, 109, 231);
+    color: white;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 3.2em;
+    margin-bottom: 1em;
+}
+
+figure{
+    text-align: center;
+    width: 100%;
+}
+
+.mattpic{
+    width: 60%;
+    border: solid white;
+    border-width : 1px;
+}
+.txtmattgroening{
+    margin-top: 10px;
+    text-align: justify;
+    width: 100%;
+}
+.mattgroening_fc{
+    margin-top: 10px;
+}
+.dessinateur_fc{
+    font-style: italic;
+    margin-bottom: 0.6em;
 }
 
 /* *******************************************footer********************************* */
@@ -75,3 +143,111 @@ footer{
     background-color:rgb(15, 109, 231);
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive design pour les smartphones (moins de 768px) */
+@media only screen and (max-width: 768px) {
+    #container {
+      width: 100%;
+      display: block;
+    }
+  
+    .mattgroeningA{
+            width: 100%;
+            height: 50%;
+    }
+  
+    .simpsons_le_film{
+        display: block;
+    }
+
+    article {
+        width: 100%; 
+        display: block;
+        flex-direction: column;
+        /* Le contenu principal prend toute la largeur */
+    }
+  
+    main {
+      flex-direction: column; 
+      display: block;
+      /* Les éléments s'empilent en colonne */
+  }
+  nav{
+    width: 100%;
+
+  }
+  ul{
+    display: block;
+    text-align: center;
+  }
+
+  li{
+    padding: 1em;
+  }
+  .contenu{
+    width: 100%;
+  }
+  .content{
+    display: block;
+    padding: 0;
+  }
+
+}
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #container {
+        width: 100%;
+      }
+    
+      aside {
+        width: 100%; 
+        display: flex;
+        margin-bottom: 1em; 
+      }
+    
+      article {
+        width: 100%; 
+      }
+    
+      main {
+        flex-direction: column; 
+
+    }
+
+    nav{
+      width: 100%;
+    }
+
+    ul{
+        display: flex;
+        /* afin de mettre les élément l'un a coté de l'autre car à la base les élément seront placer l'une au dessus de l'autre  */
+    }
+
+    ul{ justify-content: space-evenly;
+        /* Les éléments sont répartis équitablement Tous les éléments sont séparés par le même */
+    }
+       
+    .container-contenu{
+        width: 100%;}
+
+        .darkblue{
+            font-size: 1.3em;
+            padding: 0.5em;
+        }
+    }
+    
