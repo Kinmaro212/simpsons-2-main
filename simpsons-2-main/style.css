@@ -150,16 +150,7 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-/* Responsive design pour les smartphones (moins de 768px) */
+/********************************************* Responsive design pour les smartphones (moins de 768px)****************************************/
 @media only screen and (max-width: 768px) {
     #container {
     width: 100%;
@@ -187,51 +178,53 @@ footer{
     /* Les éléments s'empilent en colonne */  
     display: block;
     padding-bottom:1em ; 
-  }
-  nav{
+    }
+    nav{
     width: 100%;
-
-  }
-  ul{
+    
+    }
+    ul{
     display: block;
     text-align: center;
-  }
+    }
 
-  li{
+    li{
     padding: 1em;
-  }
-  .contenu{
+    }
+    .contenu{
     width: 100%;
-  }
-  .content{
+    }
+    .content{
     display: block;
     padding: 0;
-  }
+    }
 
 }
 
+
+
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
-    #container {
+    #container{
         width: 100%;
-      }
+    }
     
       .mattgroeningA{
         width: 30%;
         height: 10%;
-      }
+    }
       .mattpic{
         width: 75%;
-      }
+    }
       .content{
         display:block;
-      }
+    }
     
-      article {
+      article{
         width: 100%; 
-      }
+    }
     
-      main {
+      main{
         flex-direction: column; 
         padding-bottom: 1em;
 
@@ -254,49 +247,50 @@ footer{
 .simpsons_le_film{
     width: 100%;
     display: block;
+    }
+
 }
 
-    }
+
     
     @media only screen and (min-width: 800px) and (max-width: 1280px) {
 
-        #container {
-            width: 100%;
-          }
+    #container{
+    width: 100%;
+    }
         
-          .mattgroeningA{
-            width: 30%;
-            height: 10%;
-          }
-          .mattpic{
-            width: 75%;
-          }
-          .content{
-            display:block;
-          }
+    .mattgroeningA{
+    width: 30%;
+    height: 10%;
+    }
+    .mattpic{
+    width: 75%;
+    }
+    .content{
+    display:block;
+    }
         
-          article {
-            width: 100%; 
-          }
+    article{
+    width: 100%; 
+    }
         
-          main {
-            flex-direction: column; 
-            padding-bottom: 1em;
+    main {
+    flex-direction: column; 
+    padding-bottom: 1em;
+    }
     
-        }
+    nav{
+    width: 100%;
+    }
     
-        nav{
-          width: 100%;
-        }
+    ul{
+    display: flex;
+    /* afin de mettre les élément l'un a coté de l'autre car à la base les élément seront placer l'une au dessus de l'autre  */
+    }
     
-        ul{
-            display: flex;
-            /* afin de mettre les élément l'un a coté de l'autre car à la base les élément seront placer l'une au dessus de l'autre  */
-        }
-    
-        ul{ justify-content: space-evenly;
-            /* Les éléments sont répartis équitablement Tous les éléments sont séparés par le même */
-        }
+    ul{ justify-content: space-evenly;
+    /* Les éléments sont répartis équitablement Tous les éléments sont séparés par le même */
+    }
     
     
     .simpsons_le_film{
