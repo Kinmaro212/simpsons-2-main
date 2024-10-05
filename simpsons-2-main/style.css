@@ -162,30 +162,31 @@ footer{
 /* Responsive design pour les smartphones (moins de 768px) */
 @media only screen and (max-width: 768px) {
     #container {
-      width: 100%;
-      display: block;
+    width: 100%;
+    display: block;
     }
   
     .mattgroeningA{
-            width: 100%;
-            height: 50%;
+    width: 50%;
+    height: 50%;
     }
   
     .simpsons_le_film{
-        display: block;
+    display: block;
     }
 
     article {
-        width: 100%; 
-        display: block;
-        flex-direction: column;
+    width: 100%; 
+    display: block;
+    flex-direction: column;
         /* Le contenu principal prend toute la largeur */
     }
   
     main {
-      flex-direction: column; 
-      display: block;
-      /* Les éléments s'empilent en colonne */
+    flex-direction: column; 
+    /* Les éléments s'empilent en colonne */  
+    display: block;
+    padding-bottom:1em ; 
   }
   nav{
     width: 100%;
@@ -248,13 +249,59 @@ footer{
     ul{ justify-content: space-evenly;
         /* Les éléments sont répartis équitablement Tous les éléments sont séparés par le même */
     }
-       
-    .container-contenu{
-        width: 100%;}
 
-        .darkblue{
-            font-size: 1.3em;
-            padding: 0.5em;
-        }
+
+.simpsons_le_film{
+    width: 100%;
+    display: block;
+}
+
     }
     
+    @media only screen and (min-width: 800px) and (max-width: 1280px) {
+
+        #container {
+            width: 100%;
+          }
+        
+          .mattgroeningA{
+            width: 30%;
+            height: 10%;
+          }
+          .mattpic{
+            width: 75%;
+          }
+          .content{
+            display:block;
+          }
+        
+          article {
+            width: 100%; 
+          }
+        
+          main {
+            flex-direction: column; 
+            padding-bottom: 1em;
+    
+        }
+    
+        nav{
+          width: 100%;
+        }
+    
+        ul{
+            display: flex;
+            /* afin de mettre les élément l'un a coté de l'autre car à la base les élément seront placer l'une au dessus de l'autre  */
+        }
+    
+        ul{ justify-content: space-evenly;
+            /* Les éléments sont répartis équitablement Tous les éléments sont séparés par le même */
+        }
+    
+    
+    .simpsons_le_film{
+        width: 100%;
+        display: block;
+    }
+        
+    }
