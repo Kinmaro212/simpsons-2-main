@@ -215,10 +215,15 @@ footer{
         width: 100%;
       }
     
-      aside {
-        width: 100%; 
-        display: flex;
-        margin-bottom: 1em; 
+      .mattgroeningA{
+        width: 30%;
+        height: 10%;
+      }
+      .mattpic{
+        width: 75%;
+      }
+      .content{
+        display:block;
       }
     
       article {
@@ -227,6 +232,7 @@ footer{
     
       main {
         flex-direction: column; 
+        padding-bottom: 1em;
 
     }
 
