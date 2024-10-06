@@ -1,3 +1,8 @@
+/* 
+Global reset pour s'assurer que tous les éléments sont centrés 
+(margin auto), padding est à 0 et box-sizing est en border-box pour inclure les bordures et paddings dans la taille totale.
+list-style: none supprime les puces des listes.
+*/
 *{
     margin: auto;
     padding: 0;
@@ -5,68 +10,99 @@
     list-style: none;
 }
 
-
-
 /* *******************************************general*********************************** */
 
+/* 
+Applique un fond orange à la page entière et centre son contenu
+*/
 body{
     background-color: rgb(255, 183, 0);
     margin: auto;
 }
 
-
+/* 
+Style des titres h2, avec un fond bleu et texte blanc centré.
+*/
 h2{
-    background-color:rgb(15, 109, 231) ;
+    background-color: rgb(15, 109, 231);
     color: white;
     text-align: center;
-    padding: 0.4em;
+    padding: 0.4em; /* Ajoute un espacement interne */
     width: 100%;
 }
 
-
 /* *******************************************header******************************** */
-header{
 
+/* 
+Le header est centré horizontalement et prend toute la largeur
+*/
+header{
     text-align: center;
     width: 100%;
 }
 
 /* *******************************************main nav******************************** */
+
+/* 
+Style du menu de navigation (liste non ordonnée).
+La liste est en ligne (display: flex) avec une répartition égale des éléments et un fond bleu.
+*/
 ul{
     color: white;
     display: flex;
     padding: 1.5em;
-    justify-content: space-around;
-    background-color:  rgb(15, 109, 231);
-    border-bottom-style:dashed;
+    justify-content: space-around; /* Répartit les éléments également */
+    background-color: rgb(15, 109, 231);
+    border-bottom-style: dashed; /* Ajoute une bordure en pointillé en bas */
 }
 
+/* 
+Style des liens dans la navigation. Les liens restent blancs.
+*/
 nav>ul>li>a{
     color: white;
 }
 
+/* 
+Figure en alignement vertical
+*/
 figure{
     vertical-align: top;
 }
+
+/* 
+Style pour un élément spécifique (simpsons_on_tv), largeur de 100%, 
+bordure en bas solide et aligné verticalement en haut
+*/
 .simpsons_on_tv{
     width: 100%;
     border-bottom-style: solid white;
     vertical-align: top;
 }
 
+/* 
+Simpsons_le_film utilise un flex display en ligne.
+*/
 .simpsons_le_film{
     display: inline flex;
 }
 
 /* *******************************************main*********************************** */
 
+/* 
+Les articles ont un texte justifié, occupent toute la largeur, 
+ont une taille de police plus grande et un padding de 0.5em.
+*/
 article{
-    text-align:justify ;
-
+    text-align:justify;
     width: 100%;
     font-size: larger;
     padding: 0.5em;
 }
+
+/* 
+Style des h1, texte coloré en jaune, plus grand avec un espace en bas.
+*/
 h1{
     color: rgb(255, 196, 0);
     font-size: larger;
@@ -74,228 +110,223 @@ h1{
     padding-top:0.4em ;
 }
 
+/* 
+Le fond de la section main est blanc
+*/
 main{
     background-color: white;
+}
 
-    }
-    
+/* 
+Conteneur principal limité à 80% de la largeur de la page
+*/
 #container{
     width: 80%;
-    }
+}
 
+/* 
+Texte spécifique à Simpson, prend 100% de la largeur et un padding en bas
+*/
 .txtsimpsons{
     width: 100%;
     padding-bottom: 2%;
 }
 
+/* 
+Chaque élément simpfilm a une bordure grise et un léger espacement autour
+*/
 .simpfilm{
     border: solid gray;
-
     margin: 0.2em;
 }
+
+/* 
+La classe content utilise un display flex et un padding sur la droite
+*/
 .content{
     display: flex;
     padding-right: 0.9em;
 }
 
-
-
 /* *******************************************main_aside***************************** */
+
+/* 
+Style pour une section aside spécifique. Largeur 30%, texte justifié, fond bleu, 
+texte blanc, et padding tout autour.
+*/
 .mattgroeningA{
-    height:44em;
-    width:30%;
+    height: 44em;
+    width: 30%;
     text-align: justify;
     background-color: rgb(15, 109, 231);
     color: white;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 0.5em 1em; /* Padding en haut, en bas, à gauche et à droite */
     margin-top: 3.2em;
     margin-bottom: 1em;
 }
 
+/* 
+Les figures dans mattgroeningA sont centrées avec une largeur de 100%
+*/
 figure{
     text-align: center;
     width: 100%;
 }
 
+/* 
+Image spécifique dans mattgroeningA, taille réduite à 60% et bordure blanche fine
+*/
 .mattpic{
     width: 60%;
     border: solid white;
-    border-width : 1px;
+    border-width: 1px;
 }
+
+/* 
+Texte avec marges en haut dans la section txtmattgroening
+*/
 .txtmattgroening{
     margin-top: 10px;
     text-align: justify;
     width: 100%;
 }
-.mattgroening_fc{
-    margin-top: 10px;
-}
+
+/* 
+Style supplémentaire pour la classe dessinateur_fc, texte en italique avec un margin-bottom
+*/
 .dessinateur_fc{
     font-style: italic;
     margin-bottom: 0.6em;
 }
 
 /* *******************************************footer********************************* */
+
+/* 
+Pied de page avec texte blanc, fond bleu, et texte centré
+*/
 footer{
     color: white;
-    background-color:rgb(15, 109, 231);
+    background-color: rgb(15, 109, 231);
     text-align: center;
 }
-
-
 
 
 
 
 /********************************************* Responsive design pour les smartphones (moins de 768px)****************************************/
+
+/* 
+Styles pour écrans plus petits (max 768px). Le container prend toute la largeur
+et l'affichage est en bloc (stacking elements vertically).
+*/
 @media only screen and (max-width: 768px) {
     #container {
     width: 100%;
     display: block;
     }
-  
-    .mattgroeningA{
-    width: 50%;
+
+    .mattgroeningA {
+    width: 50%; /* Réduit la taille de mattgroeningA */
     height: 50%;
     }
-  
-    .simpsons_le_film{
-    display: block;
+
+    .simpsons_le_film {
+    display: block; /* Affiche en bloc */
     }
 
     article {
     width: 100%; 
     display: block;
-    flex-direction: column;
-        /* Le contenu principal prend toute la largeur */
-    }
-  
-    main {
-    flex-direction: column; 
-    /* Les éléments s'empilent en colonne */  
-    display: block;
-    padding-bottom:1em ; 
-    }
-    nav{
-    width: 100%;
-    
-    }
-    ul{
-    display: block;
-    text-align: center;
+    flex-direction: column; /* Contenu principal en colonne */
     }
 
-    li{
-    padding: 1em;
+    main {
+    flex-direction: column;
+    display: block;
+    padding-bottom: 1em;
     }
-    .contenu{
+
+    nav {
     width: 100%;
     }
-    .content{
+
+    ul {
+    display: block;
+    text-align: center; /* Centrer les éléments de la navigation */
+    }
+
+    li {
+    padding: 1em;
+    }
+
+    .content {
     display: block;
     padding: 0;
     }
-
 }
 
+/* ********************************************* Styles pour écrans moyens (769px à 1024px) ********************************************/
 
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
-
-    #container{
-        width: 100%;
-    }
-    
-      .mattgroeningA{
-        width: 30%;
-        height: 10%;
-    }
-      .mattpic{
-        width: 75%;
-    }
-      .content{
-        display:block;
-    }
-    
-      article{
-        width: 100%; 
-    }
-    
-      main{
-        flex-direction: column; 
-        padding-bottom: 1em;
-
-    }
-
-    nav{
-      width: 100%;
-    }
-
-    ul{
-        display: flex;
-        /* afin de mettre les élément l'un a coté de l'autre car à la base les élément seront placer l'une au dessus de l'autre  */
-    }
-
-    ul{ justify-content: space-evenly;
-        /* Les éléments sont répartis équitablement Tous les éléments sont séparés par le même */
-    }
-
-
-.simpsons_le_film{
+    #container {
     width: 100%;
+    }
+
+    .mattgroeningA {
+    width: 30%; /* Reprend 30% de la largeur */
+    height: 10%;
+    }
+
+    .content {
     display: block;
     }
 
+    main {
+    flex-direction: column;
+    padding-bottom: 1em;
+    }
+
+    ul {
+    display: flex; /* Eléments de navigation flex */
+    justify-content: space-evenly; /* Répartition uniforme */
+    }
+
+    .simpsons_le_film {
+    width: 100%;
+    display: block;
+    }
 }
 
+/* ********************************************* Styles pour écrans larges (800px à 1280px) ********************************************/
 
-    
-    @media only screen and (min-width: 800px) and (max-width: 1280px) {
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
 
-    #container{
+    #container {
     width: 100%;
     }
-        
-    .mattgroeningA{
+
+    .mattgroeningA {
     width: 30%;
     height: 10%;
     }
-    .mattpic{
-    width: 75%;
+
+    .content {
+    display: block;
     }
-    .content{
-    display:block;
-    }
-        
-    article{
-    width: 100%; 
-    }
-        
+
     main {
-    flex-direction: column; 
+    flex-direction: column;
     padding-bottom: 1em;
     }
-    
-    nav{
-    width: 100%;
-    }
-    
-    ul{
+
+    ul {
     display: flex;
-    /* afin de mettre les élément l'un a coté de l'autre car à la base les élément seront placer l'une au dessus de l'autre  */
+    justify-content: space-evenly;
     }
-    
-    ul{ justify-content: space-evenly;
-    /* Les éléments sont répartis équitablement Tous les éléments sont séparés par le même */
+
+    .simpsons_le_film {
+    width: 100%;
+    display: block;
     }
-    
-    
-    .simpsons_le_film{
-        width: 100%;
-        display: block;
-    }
-        
-    }
+}
